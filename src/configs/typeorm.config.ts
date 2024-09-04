@@ -21,7 +21,7 @@ const config: PostgresConnectionOptions = {
   database: process.env.DATABASE,
   entities: [User, Dog, ItemCount],
   ...sslReject,
-  synchronize: true,
+  synchronize: false,
 };
 
 export default config;
